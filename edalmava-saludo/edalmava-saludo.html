@@ -1,0 +1,24 @@
+<link rel="import" href="../polymer/polymer.html" />
+
+<dom-module id="edalmava-saludo">
+<template>
+  <style>
+    div {
+	  color: #FF0000;
+	}
+  </style>
+  <div>{{saludo}}</div>
+</template>
+</dom-module>
+
+<script>
+  Polymer({
+    is: "edalmava-saludo",
+	properties: {
+	  saludo: {
+	    type: String,
+		value: "Hola Mundo desde Polymer 1.0"
+	  }
+	}
+  });
+</script>
